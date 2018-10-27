@@ -1,0 +1,116 @@
+
+
+/*GENERAL///////////////////////*/
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+
+/*GRID///////////////////////*/
+.row {
+    display: table;
+    clear: both;
+    content: "";
+    
+    width: 100%;
+}
+
+.row:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+[class^="col-"] {
+    float: left;
+    position: relative;
+}
+
+[class^="col-"]:not(:last-child) {
+    margin-right: 6rem;
+}
+
+.col-1-of-2 {
+    width: calc((100% - 6rem) / 2);
+}
+
+
+
+
+/*DESIGN///////////////////////*/
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    padding: 5rem 0 10rem 0;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.5rem;
+    padding: 3rem;
+}
+
+form label {
+   font-size: 2rem;
+   padding: 0 1.5rem 0 22rem;
+}
+
+form input {
+   border-radius: 7%;
+}
+
+form .submit  {
+   margin-left: 6rem;
+   font-size: 1.5rem;
+   padding: .5rem;
+}
+
+
+#bill__total {
+    width: 30rem;
+    height: 20rem;
+    background-color: gray;
+    border: 2px solid black;
+    margin-left: 25rem;
+}
+
+
+#tip__total {
+    width: 30rem;
+    height: 20rem;
+    background-color: gray;
+    border: 2px solid black;
+    margin-left: 10rem;
+}
+
+#bill__total--value {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#tip__total--value {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
